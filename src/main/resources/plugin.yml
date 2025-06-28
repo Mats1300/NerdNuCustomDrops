@@ -1,0 +1,14 @@
+name: NerdNuCustomDrops
+version: 1.0-SNAPSHOT
+main: nu.nerd.CustomDrops
+api-version: 1.21
+load: STARTUP
+authors:
+  - Mats1300
+description: Custom head drops for Nerd.Nu Minecraft server.
+license: MIT
+commands:
+  mobhead:
+    description: List all available mob heads.
+    usage: /mobhead list
+    permission: mobhead.list

@@ -1,0 +1,205 @@
+# ✅ NerdNuCustomDrops Plugin - Major Testing Checklist
+
+## 🔧 1. Plugin Initialization
+- [ ] Plugin enables without errors on server startup
+- [ ] `config.yml` is created/loaded correctly
+- [ ] Debug mode is respected (no debug logs unless enabled)
+
+## ⚰️ 2. Mob Head Drops
+- [ ] Mobs drop heads with correct texture and display name
+- [ ] Drop chance reflects looting level and config-defined `drop-scale`
+- [ ] All mobs and their variants are supported
+- [ ] Heads have correct persistent lore (`[Certified Authentic]`)
+- [ ] Charged creepers drop correct player/mob heads
+- [ ] Heads never drop when killed by non-player sources (unless config allows)
+- [ ] Entity type not in config does not drop head // eg. Nitwit
+
+## 💀 2. Mob Drops
+- [ ] Allay
+- [ ] Armadillo
+- [ ] Axolotl (Lucy)
+- [ ] Axolotl (Wild)
+- [ ] Axolotl (Gold)
+- [ ] Axolotl (Cyan)
+- [ ] Axolotl (Blue)
+- [ ] Bat
+- [ ] Bee (Calm)
+- [ ] Bee (Angry)
+- [ ] Blaze
+- [ ] Bogged
+- [ ] Breeze
+- [ ] Camel
+- [ ] Cat (Tabby)
+- [ ] Cat (Black)
+- [ ] Cat (Siamese)
+- [ ] Cat (Red)
+- [ ] Cat (British Shorthair)
+- [ ] Cat (Calico)
+- [ ] Cat (Persian)
+- [ ] Cat (Ragdoll)
+- [ ] Cat (White)
+- [ ] Cat (Jellie)
+- [ ] Cat (All Black)
+- [ ] Cave Spider
+- [ ] Chicken (Cold)
+- [ ] Chicken (Temperate)
+- [ ] Chicken (Warm)
+- [ ] Cod
+- [ ] Cow (Cold)
+- [ ] Cow (Temperate)
+- [ ] Cow (Warm)
+- [ ] Creaking
+- [ ] Creeper
+- [ ] Dolphin
+- [ ] Donkey
+- [ ] Drowned
+- [ ] Elder Guardian
+- [ ] Ender Dragon
+- [ ] Enderman
+- [ ] Endermite
+- [ ] Evoker
+- [ ] Fox (Red)
+- [ ] Fox (Snow)
+- [ ] Frog (Green)
+- [ ] Frog (Orange)
+- [ ] Frog (White)
+- [ ] Ghast (Idle)
+- [ ] Ghast (Shooting)
+- [ ] Glow Squid
+- [ ] Goat
+- [ ] Screaming Goat
+- [ ] Guardian
+- [ ] Happy Ghast (Happy)
+- [ ] Happy Ghast (Saddled)
+- [ ] Hoglin
+- [ ] Horse (Creamy)
+- [ ] Horse (Chestnut)
+- [ ] Horse (Black)
+- [ ] Horse (Brown)
+- [ ] Horse (Dark_Brown)
+- [ ] Horse (Gray)
+- [ ] Horse (White)
+- [ ] Husk
+- [ ] Illusioner
+- [ ] Iron Golem
+- [ ] Llama (Brown)
+- [ ] Llama (Creamy)
+- [ ] Llama (Gray)
+- [ ] Llama (White)
+- [ ] Magma Cube
+- [ ] Mooshroom (Red)
+- [ ] Mooshroom (Brown)
+- [ ] Mule
+- [ ] Ocelot
+- [ ] Panda (Normal)
+- [ ] Panda (Lazy)
+- [ ] Panda (Worried)
+- [ ] Panda (Playful)
+- [ ] Panda (Brown)
+- [ ] Panda (Weak)
+- [ ] Parrot (Red)
+- [ ] Parrot (Blue)
+- [ ] Parrot (Green)
+- [ ] Parrot (Cyan)
+- [ ] Parrot (Gray)
+- [ ] Phantom
+- [ ] Pig (Warm)
+- [ ] Pig (Temperate)
+- [ ] Pig (Cold)
+- [ ] Piglin
+- [ ] Piglin Brute
+- [ ] Pillager
+- [ ] Polar Bear
+- [ ] Pufferfish
+- [ ] Rabbit (Brown)
+- [ ] Rabbit (White)
+- [ ] Rabbit (Black)
+- [ ] Rabbit (Black & White)
+- [ ] Rabbit (Gold)
+- [ ] Rabbit (Salt&Pepper)
+- [ ] Rabbit (The Killer Bunny)
+- [ ] Ravager
+- [ ] Salmon
+- [ ] Sheep (White)
+- [ ] Sheep (Black)
+- [ ] Sheep (Blue)
+- [ ] Sheep (Brown)
+- [ ] Sheep (Cyan)
+- [ ] Sheep (Gray)
+- [ ] Sheep (Green)
+- [ ] Sheep (Light Blue)
+- [ ] Sheep (Light Gray)
+- [ ] Sheep (Lime)
+- [ ] Sheep (Magenta)
+- [ ] Sheep (Orange)
+- [ ] Sheep (Pink)
+- [ ] Sheep (Purple)
+- [ ] Sheep (Red)
+- [ ] Sheep (Yellow)
+- [ ] Sheep (jeb_)
+- [ ] Shulker
+- [ ] Silverfish
+- [ ] Skeleton
+- [ ] Skeleton Horse
+- [ ] Slime
+- [ ] Sniffer
+- [ ] Snow Golem (normal)
+- [ ] Snow Golem (derp)
+- [ ] Spider
+- [ ] Squid
+- [ ] Stray
+- [ ] Strider 
+- [ ] Strider  (Cold)
+- [ ] Tadpole
+- [ ] Trader Llama (Brown)
+- [ ] Trader Llama (Creamy)
+- [ ] Trader Llama (Gray)
+- [ ] Trader Llama (White)
+- [ ] Tropical Fish
+- [ ] Turtle
+- [ ] Vex
+- [ ] Villager (various)
+- [ ] Vindicator
+- [ ] Wandering Trader
+- [ ] Warden
+- [ ] Witch
+- [ ] Wither
+- [ ] Wither Skeleton
+- [ ] Wolf (Variants)
+- [ ] Zoglin
+- [ ] Zombie
+- [ ] Zombie Horse
+- [ ] Zombie Villager (various)
+- [ ] Zombified Piglin
+
+## 🧠 3. Head Metadata & NBT
+  - Head retains NBT/lore data after:
+  - [ ] Being placed on a block
+  - [ ] Being broken and re-picked up
+- [ ] No data loss or corruption on head reuse
+
+## 🎵 4. Noteblock Sound System
+- [ ] Placing a head on a noteblock causes the correct mob sound to play
+- [ ] Sound does not play if head is removed
+- [ ] Different mob heads produce different sounds
+
+## 📜 5. `/mobhead list` Command
+- [ ] Command shows all configured mob types from `config.yml`
+- [ ] Works without permission (no permission required)
+- [ ] Shows a clear and clean list
+- [ ] Works only in-game (not from console)
+
+## 🔐 6. Permissions & Config
+- [ ] Only players can run `/mobhead list`
+- [ ] Plugin behavior is consistent across server reloads
+- [ ] Configurable drop scales function correctly
+
+## 📁 7. Edge Cases
+- [ ] No head drops when mobs die from explosions (unless allowed)
+- [ ] Multiple mobs killed at once drop heads correctly
+- [ ] Mob heads work correctly across worlds/dimensions
+
+## ✅ Final Validation
+- [ ] All features tested on Paper 1.21.6+
+- [ ] Plugin works on a clean server with no other plugins
+- [ ] Plugin does not produce console errors or stack traces
