@@ -1,205 +1,206 @@
 # ✅ NerdNuCustomDrops Plugin - Major Testing Checklist
 
 ## 🔧 1. Plugin Initialization
-- [ ] Plugin enables without errors on server startup
-- [ ] `config.yml` is created/loaded correctly
-- [ ] Debug mode is respected (no debug logs unless enabled)
+- [X] Plugin enables without errors on server startup
+- [X] `config.yml` is created/loaded correctly
+- [X] Debug mode is respected (no debug logs unless enabled)
 
 ## ⚰️ 2. Mob Head Drops
-- [ ] Mobs drop heads with correct texture and display name
-- [ ] Drop chance reflects looting level and config-defined `drop-scale`
-- [ ] All mobs and their variants are supported
-- [ ] Heads have correct persistent lore (`[Certified Authentic]`)
-- [ ] Charged creepers drop correct player/mob heads
-- [ ] Heads never drop when killed by non-player sources (unless config allows)
-- [ ] Entity type not in config does not drop head // eg. Nitwit
+- [X] Mobs drop heads with correct texture and display name
+- [X] Drop chance reflects looting level and config-defined `drop-scale`
+- [X] All mobs and their variants are supported
+- [X] Heads have correct persistent lore (`[Certified Authentic]`)
+- [X] Charged creepers drop correct player/mob heads
+- [X] Heads never drop when killed by non-player sources (unless config allows)
+- [X] Entity type not in config does not drop head // eg. Nitwit
 
 ## 💀 2. Mob Drops
-- [ ] Allay
-- [ ] Armadillo
-- [ ] Axolotl (Lucy)
-- [ ] Axolotl (Wild)
-- [ ] Axolotl (Gold)
-- [ ] Axolotl (Cyan)
-- [ ] Axolotl (Blue)
-- [ ] Bat
-- [ ] Bee (Calm)
-- [ ] Bee (Angry)
-- [ ] Blaze
-- [ ] Bogged
-- [ ] Breeze
-- [ ] Camel
-- [ ] Cat (Tabby)
-- [ ] Cat (Black)
-- [ ] Cat (Siamese)
-- [ ] Cat (Red)
-- [ ] Cat (British Shorthair)
-- [ ] Cat (Calico)
-- [ ] Cat (Persian)
-- [ ] Cat (Ragdoll)
-- [ ] Cat (White)
-- [ ] Cat (Jellie)
-- [ ] Cat (All Black)
-- [ ] Cave Spider
-- [ ] Chicken (Cold)
-- [ ] Chicken (Temperate)
-- [ ] Chicken (Warm)
-- [ ] Cod
-- [ ] Cow (Cold)
-- [ ] Cow (Temperate)
-- [ ] Cow (Warm)
-- [ ] Creaking
-- [ ] Creeper
-- [ ] Dolphin
-- [ ] Donkey
-- [ ] Drowned
-- [ ] Elder Guardian
-- [ ] Ender Dragon
-- [ ] Enderman
-- [ ] Endermite
-- [ ] Evoker
-- [ ] Fox (Red)
-- [ ] Fox (Snow)
-- [ ] Frog (Green)
-- [ ] Frog (Orange)
-- [ ] Frog (White)
-- [ ] Ghast (Idle)
-- [ ] Ghast (Shooting)
-- [ ] Glow Squid
-- [ ] Goat
-- [ ] Screaming Goat
-- [ ] Guardian
-- [ ] Happy Ghast (Happy)
-- [ ] Happy Ghast (Saddled)
-- [ ] Hoglin
-- [ ] Horse (Creamy)
-- [ ] Horse (Chestnut)
-- [ ] Horse (Black)
-- [ ] Horse (Brown)
-- [ ] Horse (Dark_Brown)
-- [ ] Horse (Gray)
-- [ ] Horse (White)
-- [ ] Husk
-- [ ] Illusioner
-- [ ] Iron Golem
-- [ ] Llama (Brown)
-- [ ] Llama (Creamy)
-- [ ] Llama (Gray)
-- [ ] Llama (White)
-- [ ] Magma Cube
-- [ ] Mooshroom (Red)
-- [ ] Mooshroom (Brown)
-- [ ] Mule
-- [ ] Ocelot
-- [ ] Panda (Normal)
-- [ ] Panda (Lazy)
-- [ ] Panda (Worried)
-- [ ] Panda (Playful)
-- [ ] Panda (Brown)
-- [ ] Panda (Weak)
-- [ ] Parrot (Red)
-- [ ] Parrot (Blue)
-- [ ] Parrot (Green)
-- [ ] Parrot (Cyan)
-- [ ] Parrot (Gray)
-- [ ] Phantom
-- [ ] Pig (Warm)
-- [ ] Pig (Temperate)
-- [ ] Pig (Cold)
-- [ ] Piglin
-- [ ] Piglin Brute
-- [ ] Pillager
-- [ ] Polar Bear
-- [ ] Pufferfish
-- [ ] Rabbit (Brown)
-- [ ] Rabbit (White)
-- [ ] Rabbit (Black)
-- [ ] Rabbit (Black & White)
-- [ ] Rabbit (Gold)
-- [ ] Rabbit (Salt&Pepper)
-- [ ] Rabbit (The Killer Bunny)
-- [ ] Ravager
-- [ ] Salmon
-- [ ] Sheep (White)
-- [ ] Sheep (Black)
-- [ ] Sheep (Blue)
-- [ ] Sheep (Brown)
-- [ ] Sheep (Cyan)
-- [ ] Sheep (Gray)
-- [ ] Sheep (Green)
-- [ ] Sheep (Light Blue)
-- [ ] Sheep (Light Gray)
-- [ ] Sheep (Lime)
-- [ ] Sheep (Magenta)
-- [ ] Sheep (Orange)
-- [ ] Sheep (Pink)
-- [ ] Sheep (Purple)
-- [ ] Sheep (Red)
-- [ ] Sheep (Yellow)
-- [ ] Sheep (jeb_)
-- [ ] Shulker
-- [ ] Silverfish
-- [ ] Skeleton
-- [ ] Skeleton Horse
-- [ ] Slime
-- [ ] Sniffer
-- [ ] Snow Golem (normal)
-- [ ] Snow Golem (derp)
-- [ ] Spider
-- [ ] Squid
-- [ ] Stray
-- [ ] Strider 
-- [ ] Strider  (Cold)
-- [ ] Tadpole
-- [ ] Trader Llama (Brown)
-- [ ] Trader Llama (Creamy)
-- [ ] Trader Llama (Gray)
-- [ ] Trader Llama (White)
-- [ ] Tropical Fish
-- [ ] Turtle
-- [ ] Vex
-- [ ] Villager (various)
-- [ ] Vindicator
-- [ ] Wandering Trader
-- [ ] Warden
-- [ ] Witch
-- [ ] Wither
-- [ ] Wither Skeleton
-- [ ] Wolf (Variants)
-- [ ] Zoglin
-- [ ] Zombie
-- [ ] Zombie Horse
-- [ ] Zombie Villager (various)
-- [ ] Zombified Piglin
+- [X] Allay
+- [X] Armadillo
+- [X] Axolotl (Lucy)
+- [X] Axolotl (Wild)
+- [X] Axolotl (Gold)
+- [X] Axolotl (Cyan)
+- [X] Axolotl (Blue)
+- [X] Bat
+- [X] Bee (Calm)
+- [X] Bee (Angry)
+- [X] Blaze
+- [X] Bogged
+- [X] Breeze
+- [X] Camel
+- [X] Cat (Tabby)
+- [X] Cat (Black)
+- [X] Cat (Siamese)
+- [X] Cat (Red)
+- [X] Cat (British Shorthair)
+- [X] Cat (Calico)
+- [X] Cat (Persian)
+- [X] Cat (Ragdoll)
+- [X] Cat (White)
+- [X] Cat (Jellie)
+- [X] Cat (All Black)
+- [X] Cave Spider
+- [X] Chicken (Cold)
+- [X] Chicken (Temperate)
+- [X] Chicken (Warm)
+- [X] Cod
+- [X] Cow (Cold)
+- [X] Cow (Temperate)
+- [X] Cow (Warm)
+- [X] Creaking
+- [X] Creeper
+- [X] Dolphin
+- [X] Donkey
+- [X] Drowned
+- [X] Elder Guardian
+- [X] Ender Dragon
+- [X] Enderman
+- [X] Endermite
+- [X] Evoker
+- [X] Fox (Red)
+- [X] Fox (Snow)
+- [X] Frog (Green)
+- [X] Frog (Orange)
+- [X] Frog (White)
+- [X] Ghast (Idle)  Good but check name once edited after delete comment
+- [X] Ghast (Shooting)
+- [X] Glow Squid
+- [X] Goat          Good but check name once edited after delete comment
+- [X] Screaming Goat
+- [X] Guardian
+- [X] Happy Ghast
+- [X] Hoglin
+- [X] Horse (Creamy)
+- [X] Horse (Chestnut)
+- [X] Horse (Black)
+- [X] Horse (Brown)
+- [X] Horse (Dark_Brown)
+- [X] Horse (Gray)
+- [X] Horse (White)
+- [X] Husk
+- [X] Illusioner
+- [X] Iron Golem
+- [X] Llama (Brown)
+- [X] Llama (Creamy)
+- [X] Llama (Gray)
+- [X] Llama (White)
+- [X] Magma Cube
+- [X] Mooshroom (Red)
+- [X] Mooshroom (Brown)
+- [X] Mule
+- [X] Ocelot
+- [X] Panda (Normal)
+- [X] Panda (Lazy)
+- [X] Panda (Worried)
+- [X] Panda (Playful)
+- [X] Panda (Brown)
+- [X] Panda (Weak)
+- [X] Parrot (Red)
+- [X] Parrot (Blue)
+- [X] Parrot (Green)
+- [X] Parrot (Cyan)
+- [X] Parrot (Gray)
+- [X] Phantom
+- [X] Pig (Warm)
+- [X] Pig (Temperate)
+- [X] Pig (Cold)
+- [X] Piglin
+- [X] Piglin Brute
+- [X] Pillager
+- [X] Polar Bear
+- [X] Pufferfish
+- [X] Rabbit (Brown)
+- [X] Rabbit (White)
+- [X] Rabbit (Black)
+- [X] Rabbit (Black & White)
+- [X] Rabbit (Gold)
+- [X] Rabbit (Salt&Pepper)
+- [X] Rabbit (The Killer Bunny)
+- [X] Ravager
+- [X] Salmon
+- [X] Sheep (White)
+- [X] Sheep (Black)
+- [X] Sheep (Blue)
+- [X] Sheep (Brown)
+- [X] Sheep (Cyan)
+- [X] Sheep (Gray)
+- [X] Sheep (Green)
+- [X] Sheep (Light Blue)
+- [X] Sheep (Light Gray)
+- [X] Sheep (Lime)
+- [X] Sheep (Magenta)
+- [X] Sheep (Orange)
+- [X] Sheep (Pink)
+- [X] Sheep (Purple)
+- [X] Sheep (Red)
+- [X] Sheep (Yellow)
+- [X] Sheep (jeb_)
+- [X] Shulker
+- [X] Silverfish
+- [X] Skeleton
+- [X] Skeleton Horse
+- [X] Slime
+- [X] Sniffer
+- [X] Snow Golem (normal)
+- [X] Snow Golem (derp)
+- [X] Spider
+- [X] Squid
+- [X] Stray
+- [X] Strider 
+- [X] Strider  (Cold)
+- [X] Tadpole
+- [X] Trader Llama (Brown)
+- [X] Trader Llama (Creamy)
+- [X] Trader Llama (Gray)
+- [X] Trader Llama (White)
+- [X] Tropical Fish
+- [X] Turtle
+- [X] Vex
+- [X] Villager (various)
+- [X] Vindicator
+- [X] Wandering Trader
+- [X] Warden
+- [X] Witch
+- [X] Wither
+- [X] Wither Skeleton
+- [X] Wolf (Variants)
+- [X] Zoglin
+- [X] Zombie
+- [X] Zombie Horse
+- [X] Zombie Villager (various)
+- [X] Zombified Piglin
 
 ## 🧠 3. Head Metadata & NBT
   - Head retains NBT/lore data after:
-  - [ ] Being placed on a block
-  - [ ] Being broken and re-picked up
-- [ ] No data loss or corruption on head reuse
+  - [X] Being placed on a block
+  - [X] Being broken and re-picked up
+  - [X] No data loss or corruption on head reuse
 
 ## 🎵 4. Noteblock Sound System
-- [ ] Placing a head on a noteblock causes the correct mob sound to play
-- [ ] Sound does not play if head is removed
-- [ ] Different mob heads produce different sounds
+- [X] Placing a head on a noteblock causes the correct mob sound to play
+- [X] Sound does not play if head is removed
+- [X] Different mob heads produce different sounds
 
 ## 📜 5. `/mobhead list` Command
-- [ ] Command shows all configured mob types from `config.yml`
-- [ ] Works without permission (no permission required)
-- [ ] Shows a clear and clean list
-- [ ] Works only in-game (not from console)
+- [X] Command shows all configured mob types from `config.yml`
+- [X] Works without permission (no permission required)
+- [X] Shows a clear and clean list
+- [X] Works only in-game (not from console)
 
 ## 🔐 6. Permissions & Config
-- [ ] Only players can run `/mobhead list`
-- [ ] Plugin behavior is consistent across server reloads
-- [ ] Configurable drop scales function correctly
+- [X] Only players can run `/mobhead list`
+- [X] Plugin behavior is consistent across server reloads
+- [X] Configurable drop scales function correctly
 
 ## 📁 7. Edge Cases
-- [ ] No head drops when mobs die from explosions (unless allowed)
-- [ ] Multiple mobs killed at once drop heads correctly
-- [ ] Mob heads work correctly across worlds/dimensions
+- [X] No head drops when mobs die from explosions (unless allowed)
+- [X] Multiple mobs killed at once drop heads correctly
+- [X] Mob heads work correctly across worlds/dimensions
 
 ## ✅ Final Validation
-- [ ] All features tested on Paper 1.21.6+
-- [ ] Plugin works on a clean server with no other plugins
-- [ ] Plugin does not produce console errors or stack traces
+- [X] All features tested on Paper 1.21.8
+- [X] Plugin works on a clean server with no other plugins
+- [X] Plugin does not produce console errors or stack traces
+
+Once out of Snapshot this file will be deleted

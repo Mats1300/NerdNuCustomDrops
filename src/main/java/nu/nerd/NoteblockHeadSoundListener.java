@@ -11,20 +11,38 @@ import com.destroystokyo.paper.profile.PlayerProfile;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.NotePlayEvent;
+import org.bukkit.plugin.Plugin;
 
 import java.net.URL;
 
+/**
+ * Listens for NoteBlock play events and plays custom sounds if a player head
+ * with a matching texture is placed on top of the NoteBlock.
+ */
 public class NoteblockHeadSoundListener implements Listener {
 
+    private  final Plugin plugin;
     private final FileConfiguration config;
     private final boolean debug;
 
-    // Constructor: Retrieves the debug setting from the config file
-    public NoteblockHeadSoundListener(FileConfiguration config) {
+    /**
+     * Constructs a new NoteblockHeadSoundListener.
+     *
+     * @param plugin The plugin instance to use for logging.
+     * @param config The configuration file containing custom head sounds and debug settings.
+     */
+    public NoteblockHeadSoundListener(Plugin plugin, FileConfiguration config) {
+        this.plugin = plugin;
         this.config = config;
         this.debug = config.getBoolean("debug", false); // Default to false if "debug" is not set in config
     }
 
+    /**
+     * Handles the NotePlayEvent and plays a custom sound if a player head
+     * is placed above the NoteBlock and matches a texture URL in the config.
+     *
+     * @param event The NotePlayEvent triggered when a NoteBlock is played.
+     */
     @EventHandler
     public void onNoteBlockPlay(NotePlayEvent event) {
         Block noteBlock = event.getBlock();
@@ -64,7 +82,12 @@ public class NoteblockHeadSoundListener implements Listener {
         );
     }
 
-    // Helper function to check if the block is a type of head
+    /**
+     * Checks whether the given material is a type of Minecraft head.
+     *
+     * @param material The material to check.
+     * @return True if the material is a head, false otherwise.
+     */
     private boolean isHead(Material material) {
         return material == Material.PLAYER_HEAD ||
                 material == Material.ZOMBIE_HEAD ||
@@ -75,7 +98,13 @@ public class NoteblockHeadSoundListener implements Listener {
                 material == Material.DRAGON_HEAD;
     }
 
-    // Retrieves sound associated with a player's head texture from config
+    /**
+     * Retrieves the custom sound associated with a skull's player profile texture
+     * from the plugin configuration.
+     *
+     * @param skull The Skull block state containing a player profile.
+     * @return The name of the sound to play, or null if no match is found.
+     */
     private String getHeadSoundFromConfig(Skull skull) {
         PlayerProfile profile = skull.getPlayerProfile();
         if (profile == null) {
@@ -132,10 +161,14 @@ public class NoteblockHeadSoundListener implements Listener {
         return null;
     }
 
-    // Logs debug messages based on config
+    /**
+     * Logs debug messages to the plugin logger if debug is enabled in the configuration.
+     *
+     * @param message The debug message to log.
+     */
     private void logDebug(String message) {
         if (debug) {
-            System.out.println("[NoteBlockHeadSoundListener] " + message);
+            plugin.getLogger().info("[NoteBlockHeadSoundListener] " + message);
         }
     }
 }

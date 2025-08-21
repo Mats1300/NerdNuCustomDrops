@@ -6,9 +6,21 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * NerdNuCustomDrops - A Minecraft plugin for Nerd Nu Server
- * Licensed under the MIT License.
- * See LICENSE file for details.
+ * Main plugin class for NerdNuCustomDrops.
+ * <p>
+ * This plugin extends Bukkit's {@link JavaPlugin} and registers listeners and commands
+ * that provide custom mob head drops, persistence of head metadata, and interaction
+ * with note block sounds.
+ * <p>
+ * Features include:
+ * <ul>
+ *     <li>Custom mob head drops via {@link MobDeathListener}.</li>
+ *     <li>Persistence of head display name, lore, and texture via {@link HeadPersistenceListener}.</li>
+ *     <li>Custom head sounds through {@link NoteblockHeadSoundListener}.</li>
+ *     <li>A {@code /mobhead} command to list available mob heads.</li>
+ * </ul>
+ *
+ * Licensed under the MIT License. See LICENSE file for details.
  */
 
 public class CustomDrops extends JavaPlugin {
@@ -16,12 +28,28 @@ public class CustomDrops extends JavaPlugin {
     // SLF4J logger instance for the plugin
     private static final Logger LOGGER = LoggerFactory.getLogger(CustomDrops.class);
 
-    // Provide access to the logger for other classes
+    /**
+     * Provides access to the plugin's SLF4J {@link Logger}.
+     * <p>
+     * Other classes should use this method instead of creating their own logger.
+     *
+     * @return the shared SLF4J logger
+     */
     public Logger getSlf4jLogger() {
         return LOGGER;
     }
 
-    // This method is called when your plugin is enabled
+    /**
+     * Called by Bukkit when the plugin is enabled.
+     * <p>
+     * This method:
+     * <ul>
+     *     <li>Loads the default configuration file if it does not exist.</li>
+     *     <li>Registers event listeners for mob deaths, head persistence, and note block sounds.</li>
+     *     <li>Registers the {@code /mobhead} command if defined in {@code plugin.yml}.</li>
+     *     <li>Logs a warning if the command cannot be registered.</li>
+     * </ul>
+     */
     @Override
     public void onEnable() {
         // Load the plugin's default config (or custom config)
@@ -34,7 +62,10 @@ public class CustomDrops extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new HeadPersistenceListener(this, LOGGER), this);
 
         // Register the NoteBlockHeadSoundListener to handle noteblock sounds for the heads
-        getServer().getPluginManager().registerEvents(new NoteblockHeadSoundListener(getConfig()), this);
+        getServer().getPluginManager().registerEvents(
+                new NoteblockHeadSoundListener(this, getConfig()),
+                this
+        );
 
         // Get the command object
         var command = getCommand("mobhead");
@@ -49,5 +80,15 @@ public class CustomDrops extends JavaPlugin {
 
         // Log that the plugin has been successfully enabled
         LOGGER.info("NerdNuCustomDrops plugin has been enabled!");
+    }
+    /**
+     * Called by Bukkit when the plugin is disabled.
+     * <p>
+     * This method is optional in this case, but is included to log shutdown
+     * for better observability in server logs.
+     */
+    @Override
+    public void onDisable() {
+        LOGGER.info("NerdNuCustomDrops plugin has been disabled.");
     }
 }

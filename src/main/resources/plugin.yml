@@ -1,11 +1,12 @@
 name: NerdNuCustomDrops
-version: 1.0-SNAPSHOT
+version: ${project.version}
 main: nu.nerd.CustomDrops
-api-version: 1.21
-load: STARTUP
+description: Custom head drops for Nerd.Nu Minecraft server.
 authors:
   - Mats1300
-description: Custom head drops for Nerd.Nu Minecraft server.
+website: https://github.com/Mats1300/NerdNuCustomDrops
+api-version: 1.21.8
+load: STARTUP
 license: MIT
 commands:
   mobhead:

@@ -5,12 +5,12 @@ drops:
     looting-bonus: 0.02
     itemstack:
       type: PLAYER_HEAD
-      display-name: "<italic><gold>Allay Head</gold></light_purple>"
+      display-name: "<italic><gold>Allay Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
       head-sound: "minecraft:entity.allay.ambient_with_item"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY1ZGU5NDBiZmU0OTljNTllZThkYWM5ZjljMzkxOWU3NTM1ZWZmM2E5YWNiMTZmNDg0MmJmMjkwZjRjNjc5ZiJ9fX0="
       url: http://textures.minecraft.net/texture/df5de940bfe499c59ee8dac9f9c3919e7535eff3a9acb16f4842bf290f4c679f
-  Armadillo:
+  ARMADILLO:
     base-drop-chance: 0.05
     looting-bonus: 0.02
     itemstack:
@@ -18,8 +18,8 @@ drops:
       display-name: "<italic><gold>Armadillo Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
       head-sound: "minecraft:entity.armadillo.ambient"
-      internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTg1MmIzM2JhMjk0ZjU2MDA5MDc1MmQxMTNmZTcyOGNiYzdkZDA0MjAyOWEzOGQ1MzgyZDY1YTIxNDYwNjhiNyJ9fX0="
-      url: http://textures.minecraft.net/texture/9852b33ba294f560090752d113fe728cbc7dd042029a38d5382d65a2146068b7
+      internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE2NGVkMGUwZWY2OWIwY2U3ODE1ZTQzMDBiNDQxM2E0ODI4ZmNiMDA5MjkxODU0MzU0NWE0MThhNDhlMGMzYyJ9fX0="
+      url: http://textures.minecraft.net/texture/9164ed0e0ef69b0ce7815e4300b4413a4828fcb0092918543545a418a48e0c3c
   AXOLOTL:
     variants:
       lucy:
@@ -112,8 +112,8 @@ drops:
       display-name: "<italic><gold>Blaze Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
       head-sound: "minecraft:entity.blaze.ambient"
-      internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc4ZWYyZTRjZjJjNDFhMmQxNGJmZGU5Y2FmZjEwMjE5ZjViMWJmNWIzNWE0OWViNTFjNjQ2Nzg4MmNiNWYwIn19fQ=="
-      url: http://textures.minecraft.net/texture/b78ef2e4cf2c41a2d14bfde9caff10219f5b1bf5b35a49eb51c6467882cb5f0
+      internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwNjU3ZTI0YjU2ZTFiMmY4ZmMyMTlkYTFkZTc4OGMwYzI0ZjM2Mzg4YjFhNDA5ZDBjZDJkOGRiYTQ0YWEzYiJ9fX0="
+      url: http://textures.minecraft.net/texture/b20657e24b56e1b2f8fc219da1de788c0c24f36388b1a409d0cd2d8dba44aa3b
   BOGGED:
     base-drop-chance: 0.05
     looting-bonus: 0.02
@@ -204,8 +204,8 @@ drops:
           display-name: "<italic><gold>Persian Cat Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
           head-sound: "minecraft:entity.cat.ambient"
-          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWJlZGMzN2YzYjVkYzVjNDQ4ODg4NjQ3ZmE3NzQzZGE3YjU4OWQ5ZTIxY2FhZjE3ZTFiODgxY2Y1YmI0Zjc1OSJ9fX0="
-          url: http://textures.minecraft.net/texture/ebedc37f3b5dc5c44888647fa7743da7b589d9e21caaf17e1b881cf5bb4f759
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmY0MGM3NDYyNjBlZjkxYzk2YjI3MTU5Nzk1ZTg3MTkxYWU3Y2UzZDVmNzY3YmY4Yzc0ZmFhZDk2ODlhZjI1ZCJ9fX0="
+          url: http://textures.minecraft.net/texture/ff40c746260ef91c96b27159795e87191ae7ce3d5f767bf8c74faad9689af25d
       ragdoll:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -214,8 +214,8 @@ drops:
           display-name: "<italic><gold>Ragdoll Cat Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
           head-sound: "minecraft:entity.cat.ambient"
-          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmRjMTgyN2JmNzcxYmU5ZTg4N2FjNGU2OTRhOWQ1ZTA4MTI1M2U1NzAwYTQxZmFjODVkZDUxNGU0NTU4MWNjNiJ9fX0="
-          url: http://textures.minecraft.net/texture/2dc1827bf771be9e887ac4e694a9d5e081253e5700a41fac85dd514e45581cc6
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGM3YTQ1ZDI1ODg5ZTNmZGY3Nzk3Y2IyNThlMjZkNGU5NGY1YmMxM2VlZjAwNzk1ZGFmZWYyZTgzZTBhYjUxMSJ9fX0="
+          url: http://textures.minecraft.net/texture/dc7a45d25889e3fdf7797cb258e26d4e94f5bc13eef00795dafef2e83e0ab511
       red:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -224,8 +224,8 @@ drops:
           display-name: "<italic><gold>Red Tabby Cat Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
           head-sound: "minecraft:entity.cat.ambient"
-          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU0MmRjNjcwODMyNGE4ZTBiNTYzNzM3NTQ0ZTM1OGI0N2I2YjMyYjcxM2M0YjZmN2U2NTRjYzBkYmZhNjJkMiJ9fX0="
-          url: http://textures.minecraft.net/texture/f542dc6708324a8e0b563737544e358b47b6b32b713c4b6f7e654cc0dbfa62d2
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjExM2RiZDNjNmEwNzhhMTdiNGVkYjc4Y2UwN2Q4MzZjMzhkYWNlNTAyN2Q0YjBhODNmZDYwZTdjYTdhMGZjYiJ9fX0="
+          url: http://textures.minecraft.net/texture/2113dbd3c6a078a17b4edb78ce07d836c38dace5027d4b0a83fd60e7ca7a0fcb
       siamese:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -234,8 +234,8 @@ drops:
           display-name: "<italic><gold>Siamese Cat Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
           head-sound: "minecraft:entity.cat.ambient"
-          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNmNzZlYmJjZTVjYmViZjc3YjY3ZTIwY2Q4NDZlMjdiN2JlYWYwOGZkYzRjYzAxZWUwZDZjZjkxNzMyZDg4In19fQ=="
-          url: http://textures.minecraft.net/texture/f3f76ebbce5cbebf77b67e20cd846e27b7beaf08fdc4cc01ee0d6cf91732d88
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDViM2Y4Y2E0YjNhNTU1Y2NiM2QxOTQ0NDk4MDhiNGM5ZDc4MzMyNzE5NzgwMGQ0ZDY1OTc0Y2M2ODVhZjJlYSJ9fX0="
+          url: http://textures.minecraft.net/texture/d5b3f8ca4b3a555ccb3d194449808b4c9d783327197800d4d65974cc685af2ea
       tabby:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -244,8 +244,8 @@ drops:
           display-name: "<italic><gold>Brown Tabby Cat Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
           head-sound: "minecraft:entity.cat.ambient"
-          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY0M2FiNTczYTkxMWNhZDliNTdlY2Q2MTAzYjA2MmFhYmYxNzQ1N2NlZjA3MzgxNjc4NTM1YjQzNmM1NTEzYyJ9fX0="
-          url: http://textures.minecraft.net/texture/a643ab573a911cad9b57ecd6103b062aabf17457cef07381678535b436c5513c
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGUyOGQzMGRiM2Y4YzNmZTUwY2E0ZjI2ZjMwNzVlMzZmMDAzYWU4MDI4MTM1YThjZDY5MmYyNGM5YTk4YWUxYiJ9fX0="
+          url: http://textures.minecraft.net/texture/de28d30db3f8c3fe50ca4f26f3075e36f003ae8028135a8cd692f24c9a98ae1b
       white:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -305,12 +305,12 @@ drops:
       type: PLAYER_HEAD
       display-name: "<italic><gold>Cod Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
-      head-sound: "minecraft:entity.cod.ambient"
+      head-sound: "minecraft:entity.fish.swim"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGZlZWZmNGI3ZmNmY2U2OGIwZjc0ZGYwZGIwYWQwYzAxZjczMDFkMGM2ZDg5MzY5OWI0MDJiZDUwYmIzNzZiMCJ9fX0="
       url: http://textures.minecraft.net/texture/4feeff4b7fcfce68b0f74df0db0ad0c01f7301d0c6d893699b402bd50bb376b0
   COW:
     variants:
-      Cold:
+      cold:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -320,7 +320,7 @@ drops:
           head-sound: "minecraft:entity.cow.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQwNjg4ODVkMmRmYTNhMzA5MzYzYWYwYTg3ZGNhNmZiZjYyOWY3MTMwNzRmOTY4NjIxOWQ3YmE3YWY3MDA4ZCJ9fX0="
           url: http://textures.minecraft.net/texture/ad068885d2dfa3a309363af0a87dca6fbf629f713074f9686219d7ba7af7008d
-      Temperate:
+      temperate:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -330,7 +330,7 @@ drops:
           head-sound: "minecraft:entity.cow.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY4Y2UzOTE1YTIxMTY4ZDgzOTQyMTQ1NTJjZGI1NjUyZTg1NWU5ZTM4MjAwMWQ1OTY5NzJmZTNjMDA5ZWE3ZCJ9fX0="
           url: http://textures.minecraft.net/texture/8f8ce3915a21168d8394214552cdb5652e855e9e382001d596972fe3c009ea7d
-      Warm:
+      warm:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -350,6 +350,16 @@ drops:
       head-sound: "minecraft:entity.creaking.ambient"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjkzYzk0Njk3OTdkZDI5ZWQ4NzdhZGVmY2IzZDJlNmRhNTI4ZDkyMDM1NjdjYTJhNDA3NWU3NTFkYjA1YzNlMCJ9fX0="
       url: http://textures.minecraft.net/texture/f93c9469797dd29ed877adefcb3d2e6da528d9203567ca2a4075e751db05c3e0
+  CREEPER:
+    base-drop-chance: 0.05
+    looting-bonus: 0.02
+    itemstack:
+      type: CREEPER_HEAD
+      display-name: "<italic><gold>Creeper Head</gold></italic>"
+      lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+      head-sound: "minecraft:"
+      internal: ""
+      url:
   DOLPHIN:
     base-drop-chance: 0.05
     looting-bonus: 0.02
@@ -390,6 +400,16 @@ drops:
       head-sound: "minecraft:entity.elder_guardian.ambient"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTA0NmQ3NDE5MjAxOWExMmI2N2QwNTllNjNlODViYzk5YmQ4ZGQ0MDI5YWQ2MTY4YTJiZjI2MTMwYzhjNTkyNCJ9fX0="
       url: http://textures.minecraft.net/texture/e046d74192019a12b67d059e63e85bc99bd8dd4029ad6168a2bf26130c8c5924
+  ENDER_DRAGON:
+    base-drop-chance: 0.05
+    looting-bonus: 0.02
+    itemstack:
+      type: DRAGON_HEAD
+      display-name: "<italic><gold>Ender Dragon Head</gold></italic>"
+      lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+      head-sound: "minecraft:"
+      internal: ""
+      url:
   ENDERMAN:
     base-drop-chance: 0.05
     looting-bonus: 0.02
@@ -539,27 +559,15 @@ drops:
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhlNzI1Nzc5YzIzNGM1OTBjY2U4NTRkYjVjMTA0ODVlZDhkOGEzM2ZhOWIyYmRjMzQyNGI2OGJiMTM4MGJlZCJ9fX0="
       url: http://textures.minecraft.net/texture/b8e725779c234c590cce854db5c10485ed8d8a33fa9b2bdc3424b68bb1380bed
   HAPPY_GHAST:
-    variants:
-      happy:
-        base-drop-chance: 0.05
-        looting-bonus: 0.02
-        itemstack:
-          type: PLAYER_HEAD
-          display-name: "<italic><gold>Happy Ghast Head</gold></italic>"
-          lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
-          head-sound: "minecraft:entity.happy_ghast.ambient"
-          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFhMzZjYjkzZDAxNjc1YzQ2MjJkZDVjOGQ4NzIxMTA5MTFlYzEyYzM3MmU4OWFmYThiYTAzODYyODY3ZjZmYiJ9fX0="
-          url: http://textures.minecraft.net/texture/a1a36cb93d01675c4622dd5c8d872110911ec12c372e89afa8ba03862867f6fb
-      saddled:
-        base-drop-chance: 0.05
-        looting-bonus: 0.02
-        itemstack:
-          type: PLAYER_HEAD
-          display-name: "<italic><gold>Happy Ghast Head</gold></italic>"
-          lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
-          head-sound: "minecraft:entity.happy_ghast.ambient"
-          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdlMTJhNTk1OTk5MmNlMTUzY2VkMjM2YWE2NzMyMzk2NTMxODM0ZDAwZjI4M2JjZTE5NTJkMDRmMzU5MWQ5OSJ9fX0="
-          url: http://textures.minecraft.net/texture/f7e12a5959992ce153ced236aa6732396531834d00f283bce1952d04f3591d99
+    base-drop-chance: 0.05
+    looting-bonus: 0.02
+    itemstack:
+      type: PLAYER_HEAD
+      display-name: "<italic><gold>Happy Ghast Head</gold></italic>"
+      lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+      head-sound: "minecraft:entity.happy_ghast.ambient"
+      internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFhMzZjYjkzZDAxNjc1YzQ2MjJkZDVjOGQ4NzIxMTA5MTFlYzEyYzM3MmU4OWFmYThiYTAzODYyODY3ZjZmYiJ9fX0="
+      url: http://textures.minecraft.net/texture/a1a36cb93d01675c4622dd5c8d872110911ec12c372e89afa8ba03862867f6fb
   HOGLIN:
     base-drop-chance: 0.05
     looting-bonus: 0.02
@@ -932,6 +940,16 @@ drops:
           head-sound: "minecraft:entity.pig.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2JlYmExYTJkNTZlODRmOGU1MWZlZDY2NTlmMmNiN2MxNGZlZDQzODU5YWY1ODQ3Mzc4OTdiZjcwYzAzOTQ3NSJ9fX0="
           url: http://textures.minecraft.net/texture/7beba1a2d56e84f8e51fed6659f2cb7c14fed43859af584737897bf70c039475
+  PIGLIN:
+    base-drop-chance: 0.05
+    looting-bonus: 0.02
+    itemstack:
+      type: PIGLIN_HEAD
+      display-name: "<italic><gold>Piglin Head</gold></italic>"
+      lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+      head-sound: "minecraft:"
+      internal: ""
+      url:
   PIGLIN_BRUTE:
     base-drop-chance: 0.05
     looting-bonus: 0.02
@@ -969,7 +987,7 @@ drops:
       type: PLAYER_HEAD
       display-name: "<italic><gold>Pufferfish Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
-      head-sound: "minecraft:entity.puffer_fish.ambient"
+      head-sound: "entity.puffer_fish.blow_up"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjkyMzUwYzlmMDk5M2VkNTRkYjJjNzExMzkzNjMyNTY4M2ZmYzIwMTA0YTliNjIyYWE0NTdkMzdlNzA4ZDkzMSJ9fX0="
       url: http://textures.minecraft.net/texture/292350c9f0993ed54db2c7113936325683ffc20104a9b622aa457d37e708d931
   RABBIT:
@@ -1256,6 +1274,16 @@ drops:
       head-sound: "minecraft:entity.silverfish.ambient"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmZlMTMyMzdlMTEwOWNhYjcyNjRkYzUzYjBhYTY5N2NmOWE3YzYyYzk4NGEyNjlmYjA3NTVhMjg4OTEyYmJjYSJ9fX0="
       url: http://textures.minecraft.net/texture/bfe13237e1109cab7264dc53b0aa697cf9a7c62c984a269fb0755a288912bbca
+  SKELETON:
+    base-drop-chance: 0.05
+    looting-bonus: 0.02
+    itemstack:
+      type: SKELETON_HEAD
+      display-name: "<italic><gold>Skeleton Head</gold></italic>"
+      lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+      head-sound: "minecraft:"
+      internal: ""
+      url:
   SKELETON_HORSE:
     base-drop-chance: 0.05
     looting-bonus: 0.02
@@ -1295,7 +1323,7 @@ drops:
           type: PLAYER_HEAD
           display-name: "<italic><gold>Snow Golem Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
-          head-sound: "minecraft:entity.snow_golem.ambient"
+          head-sound: "entity.snow_golem.shoot"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTNhZDc5MjA3YzNmOGJiZjRiMWQ1MzJjZmU4NmRjY2I1N2QyYzk3YWVlYjUxZWYwMGE2NjBhZmRjZWFiNWZhOSJ9fX0="
           url: http://textures.minecraft.net/texture/53ad79207c3f8bbf4b1d532cfe86dccb57d2c97aeeb51ef00a660afdceab5fa9
       derp:
@@ -1305,7 +1333,7 @@ drops:
           type: PLAYER_HEAD
           display-name: "<italic><gold>Snow Golem Sheared Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
-          head-sound: "minecraft:entity.snow_golem.ambient"
+          head-sound: "entity.snow_golem.shoot"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZmMjBhZWM1MjhjMzk2OGRkODE2NGY5ZDkzMzZiMDgxYjNhMmM3ZWNmMTg5Y2Y3M2RmNmY5MjVlNWE0ZWQxNCJ9fX0="
           url: http://textures.minecraft.net/texture/e6f20aec528c3968dd8164f9d9336b081b3a2c7ecf189cf73df6f925e5a4ed14
   SPIDER:
@@ -1340,7 +1368,7 @@ drops:
       url: http://textures.minecraft.net/texture/78ddf76e555dd5c4aa8a0a5fc584520cd63d489c253de969f7f22f85a9a2d56
   STRIDER:
     variants:
-      strider:
+      normal:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1350,7 +1378,7 @@ drops:
           head-sound: "minecraft:entity.strider.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThhOWFkZjc4MGVjN2RkNDYyNWM5YzA3NzkwNTJlNmExNWE0NTE4NjY2MjM1MTFlNGM4MmU5NjU1NzE0YjNjMSJ9fX0="
           url: http://textures.minecraft.net/texture/18a9adf780ec7dd4625c9c0779052e6a15a451866623511e4c82e9655714b3c1
-      cold_strider:
+      shivering:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1419,7 +1447,7 @@ drops:
       type: PLAYER_HEAD
       display-name: "<italic><gold>Tropical Fish Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
-      head-sound: "minecraft:entity.tropical_fish.ambient"
+      head-sound: "minecraft:entity.fish.swim"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZkZDVlNmFkZGI1NmFjYmM2OTRlYTRiYTU5MjNiMWIyNTY4ODE3OGZlZmZhNzIyOTAyOTllMjUwNWM5NzI4MSJ9fX0="
       url: http://textures.minecraft.net/texture/d6dd5e6addb56acbc694ea4ba5923b1b25688178feffa72290299e2505c97281
   TURTLE:
@@ -1472,7 +1500,7 @@ drops:
           display-name: "<italic><gold>Butcher Villager Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
           head-sound: "minecraft:entity.villager.work_butcher"
-          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY3NzRkMmRmNTE1ZWNlYWU5ZWVkMjkxYzFiNDBmOTRhZGY3MWRmMGFiODFjNzE5MTQwMmUxYTQ1YjNhMjA4NyJ9fX0=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY3NzRkMmRmNTE1ZWNlYWU5ZWVkMjkxYzFiNDBmOTRhZGY3MWRmMGFiODFjNzE5MTQwMmUxYTQ1YjNhMjA4NyJ9fX0="
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY3NzRkMmRmNTE1ZWNlYWU5ZWVkMjkxYzFiNDBmOTRhZGY3MWRmMGFiODFjNzE5MTQwMmUxYTQ1YjNhMjA4NyJ9fX0="
           url: http://textures.minecraft.net/texture/c6774d2df515eceae9eed291c1b40f94adf71df0ab81c7191402e1a45b3a2087
       cartographer:
         base-drop-chance: 0.05
@@ -1524,6 +1552,16 @@ drops:
           head-sound: "minecraft:entity.villager.work_fletcher"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1MzJlOTBjNTczYTM5NGM3ODAyYWE0MTU4MzA1ODAyYjU5ZTY3ZjJhMmI3ZTNmZDAzNjNhYTZlYTQyYjg0MSJ9fX0="
           url: http://textures.minecraft.net/texture/17532e90c573a394c7802aa4158305802b59e67f2a2b7e3fd0363aa6ea42b841
+      leatherworker:
+        base-drop-chance: 0.05
+        looting-bonus: 0.02
+        itemstack:
+          type: PLAYER_HEAD
+          display-name: "<italic><gold>Leatherworker Villager Head</gold></italic>"
+          lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+          head-sound: "minecraft:entity.villager.work_leatherworker"
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc2Y2Y4YjczNzhlODg5Mzk1ZDUzOGU2MzU0YTE3YTNkZTZiMjk0YmI2YmY4ZGI5YzcwMTk1MWM2OGQzYzBlNiJ9fX0="
+          url: http://textures.minecraft.net/texture/f76cf8b7378e889395d538e6354a17a3de6b294bb6bf8db9c701951c68d3c0e6
       librarian:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -1534,6 +1572,26 @@ drops:
           head-sound: "minecraft:entity.villager.work_librarian"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY2YTUzZmM3MDdjZTFmZjg4YTU3NmVmNDAyMDBjZThkNDlmYWU0YWNhZDFlM2IzNzg5YzdkMWNjMWNjNTQxYSJ9fX0="
           url: http://textures.minecraft.net/texture/e66a53fc707ce1ff88a576ef40200ce8d49fae4acad1e3b3789c7d1cc1cc541a
+      mason:
+        base-drop-chance: 0.05
+        looting-bonus: 0.02
+        itemstack:
+          type: PLAYER_HEAD
+          display-name: "<italic><gold>Mason Villager Head</gold></italic>"
+          lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+          head-sound: "minecraft:entity.villager.work_mason"
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxZWM2MTJmOGY3ODk4NGEwOGY4MjkwYmQzZjFjMTg5MmI0Zjc4MjdiNTI0ZGJhYjdlYWFjYzlkZDllMjJiMiJ9fX0="
+          url: http://textures.minecraft.net/texture/621ec612f8f78984a08f8290bd3f1c1892b4f7827b524dbab7eaacc9dd9e22b2
+      nitwit:
+        base-drop-chance: 0.05
+        looting-bonus: 0.02
+        itemstack:
+          type: PLAYER_HEAD
+          display-name: "<italic><gold>Nitwit Villager Head</gold></italic>"
+          lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+          head-sound: "minecraft:entity.villager.ambient"
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlNzk5ZGJmYWY5ODI4N2RmYmFmY2U5NzA2MTJjOGYwNzUxNjg5NzdhYWNjMzA5ODlkMzRhNGE1ZmNkZjQyOSJ9fX0="
+          url: http://textures.minecraft.net/texture/35e799dbfaf98287dfbafce970612c8f075168977aacc30989d34a4a5fcdf429
       shepherd:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -1544,6 +1602,16 @@ drops:
           head-sound: "minecraft:entity.villager.work_shepherd"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTllMDRhNzUyNTk2ZjkzOWY1ODE5MzA0MTQ1NjFiMTc1NDU0ZDQ1YTA1MDY1MDFlN2QyNDg4Mjk1YTVkNWRlIn19fQ=="
           url: http://textures.minecraft.net/texture/19e04a752596f939f581930414561b175454d45a0506501e7d2488295a5d5de
+      toolsmith:
+        base-drop-chance: 0.05
+        looting-bonus: 0.02
+        itemstack:
+          type: PLAYER_HEAD
+          display-name: "<italic><gold>Toolsmith Villager Head</gold></italic>"
+          lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+          head-sound: "minecraft:entity.villager.work_toolsmith"
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RmYTA3ZmQxMjQ0ZWI4OTQ1ZjRlZGVkZDAwNDI2NzUwYjc3ZWY1ZGZiYWYwM2VkNzc1NjMzNDU5ZWNlNDE1YSJ9fX0="
+          url: http://textures.minecraft.net/texture/7dfa07fd1244eb8945f4ededd00426750b77ef5dfbaf03ed775633459ece415a
       weaponsmith:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -1581,7 +1649,7 @@ drops:
       type: PLAYER_HEAD
       display-name: "<italic><gold>Warden Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
-      head-sound: "minecraft:entity.warden.ambient"
+      head-sound: "minecraft:entity.warden.heartbeat"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM5Yzg0MzQ5NzQyMTY0YTIyOTcxZWU1NDUxNmZmZjkxZDg2OGRhNzJjZGNjZTYyMDY5ZGIxMjhjNDIxNTRiMiJ9fX0="
       url: http://textures.minecraft.net/texture/bc9c84349742164a22971ee54516fff91d868da72cdcce62069db128c42154b2
   WITCH:
@@ -1604,9 +1672,19 @@ drops:
       head-sound: "minecraft:entity.wither.ambient"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY0ZTFjM2UzMTVjOGQ4ZmZmYzM3OTg1YjY2ODFjNWJkMTZhNmY5N2ZmZDA3MTk5ZThhMDVlZmJlZjEwMzc5MyJ9fX0="
       url: http://textures.minecraft.net/texture/964e1c3e315c8d8fffc37985b6681c5bd16a6f97ffd07199e8a05efbef103793
+  WITHER_SKELETON:
+    base-drop-chance: 0.05
+    looting-bonus: 0.02
+    itemstack:
+      type: WITHER_SKELETON_HEAD
+      display-name: "<italic><gold>Wither Skeleton Head</gold></italic>"
+      lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+      head-sound: "minecraft:"
+      internal: ""
+      url:
   WOLF:
     variants:
-      "angry_minecraft:pale":
+     angry_pale:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1616,7 +1694,7 @@ drops:
           head-sound: "minecraft:entity.wolf.growl"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFhODQ2MTFjOGM4OTU4MzM2ZjY0ZDU4ZGMyMDljN2FiOTU4ZGRkOTlkMmY1ODc2ZGFkNzI2M2Y3MGVjZWIyNyJ9fX0="
           url: http://textures.minecraft.net/texture/1aa84611c8c8958336f64d58dc209c7ab958ddd99d2f5876dad7263f70eceb27
-      "minecraft:ashen":
+     ashen:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1626,7 +1704,7 @@ drops:
           head-sound: "minecraft:entity.wolf.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDcwNjA4ZDQzNmY1YWEyMTMwNDdiNTRhNDQzYTA5MWRkMmQ3MWNiY2Y2ZTczMzM4YjIzNTJjZTExMjUxZGZmMSJ9fX0="
           url: http://textures.minecraft.net/texture/470608d436f5aa213047b54a443a091dd2d71cbcf6e73338b2352ce11251dff1
-      "minecraft:black":
+     black:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1636,7 +1714,7 @@ drops:
           head-sound: "minecraft:entity.wolf.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjY5NzY1MDMzNDBlYjAzMGFiNzdmMzAwYTJlZmExMmYyMTc5ZGYyY2E5Y2EwZDI5MmQ5ODNjNTBlZDkzMzMwOSJ9fX0="
           url: http://textures.minecraft.net/texture/f6976503340eb030ab77f300a2efa12f2179df2ca9ca0d292d983c50ed933309
-      "minecraft:chestnut":
+     chestnut:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1646,7 +1724,7 @@ drops:
           head-sound: "minecraft:entity.wolf.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY3MTg5N2E2MTgyYjEwMTY2MGFiMjQzOGU0NTBmNTdjZGFkMmIwOGMyMWI0MDU2NzQ5NTU2MTg1YTRlZjg0ZiJ9fX0="
           url: http://textures.minecraft.net/texture/9f71897a6182b101660ab2438e450f57cdad2b08c21b4056749556185a4ef84f
-      "minecraft:pale":
+     pale:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1656,7 +1734,7 @@ drops:
           head-sound: "minecraft:entity.wolf.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGYwYjIyMTc4NmYxOTNjMDZkZDE5YTc4NzVhOTAzNjM1MTEzZjg0NTIzOTI3YmI2OTc2NDIzN2ZlMjA3MDNkZSJ9fX0="
           url: http://textures.minecraft.net/texture/8f0b221786f193c06dd19a7875a903635113f84523927bb69764237fe20703de
-      "minecraft:rusty":
+     rusty:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1666,7 +1744,7 @@ drops:
           head-sound: "minecraft:entity.wolf.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjcwZWVjZWE3OGZjYzg3ZjgwZTgxMjU3MzM0MjNjOTZhODhiYjYwNDA4YzcwMjVkZDU0OTk4ZDYyOWJlZTUxNCJ9fX0="
           url: http://textures.minecraft.net/texture/670eecea78fcc87f80e8125733423c96a88bb60408c7025dd54998d629bee514
-      "minecraft:snowy":
+     snowy:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1676,7 +1754,7 @@ drops:
           head-sound: "minecraft:entity.wolf.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGM4YWNmNDU1ZjY0ODMyYjZjOWRlYmIwM2EyYzI2MTZkNDI2ZmVhOTllY2E5MTA5OWI2MWZhZThiNmRiODg2OSJ9fX0="
           url: http://textures.minecraft.net/texture/8c8acf455f64832b6c9debb03a2c2616d426fea99eca91099b61fae8b6db8869
-      "minecraft:spotted":
+     spotted:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1686,7 +1764,7 @@ drops:
           head-sound: "minecraft:entity.wolf.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQzZTM0YzMwNjNkMWE1MzAxNmI2MmRhYTViYjE1YjcyMjllOWMwYjc3MjVlYTRlODk1Y2JhYmM1ZmE3ODQwMCJ9fX0="
           url: http://textures.minecraft.net/texture/643e34c3063d1a53016b62daa5bb15b7229e9c0b7725ea4e895cbabc5fa78400
-      "minecraft:striped":
+     striped:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1696,7 +1774,7 @@ drops:
           head-sound: "minecraft:entity.wolf.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNjZDBlMGRmZjkyYzA3OWY4NTlhYzVlOTAzNjkyMWI1MjBiNjhiYmQ4MmE4ZTY1ZWZjMzNkZjQ2NmUyZDk2YiJ9fX0="
           url: http://textures.minecraft.net/texture/dccd0e0dff92c079f859ac5e9036921b520b68bbd82a8e65efc33df466e2d96b
-      "minecraft:woods":
+     woods:
         base-drop-chance: 0.05
         looting-bonus: 0.02
         itemstack:
@@ -1798,6 +1876,16 @@ drops:
           head-sound: "minecraft:entity.zombie_villager.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjUxYmMwOTY4OGRmN2ZkMzI0MDk2YmQ3MTk0ZTNkMGU4OTY4ZTU0ZmRhYjkwNDFkZTU4N2RhNDMxZWQ5ODljYSJ9fX0="
           url: http://textures.minecraft.net/texture/651bc09688df7fd324096bd7194e3d0e8968e54fdab9041de587da431ed989ca
+          leatherworker:
+            base-drop-chance: 0.05
+            looting-bonus: 0.02
+            itemstack:
+              type: PLAYER_HEAD
+              display-name: "<italic><gold>Zombie Leatherworker Head</gold></italic>"
+              lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+              head-sound: "minecraft:entity.zombie_villager.ambient"
+              internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
+              url: http://textures.minecraft.net/texture/9b2388b23ddd6a9a5776ff2e8ca55b4efe3090caaf967c22769c576b0a40b885
       librarian:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -1808,6 +1896,26 @@ drops:
           head-sound: "minecraft:entity.zombie_villager.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
           url: http://textures.minecraft.net/texture/7e38e8af075701ad40de5b2ef18e1ed39678e8558444ee91d563d5e5aeb32fab
+      mason:
+        base-drop-chance: 0.05
+        looting-bonus: 0.02
+        itemstack:
+          type: PLAYER_HEAD
+          display-name: "<italic><gold>Zombie Mason Head</gold></italic>"
+          lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+          head-sound: "minecraft:entity.zombie_villager.ambient"
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU4Njk4NDQ4ZTMxNmQ0YmRkODMzZDk2MjFjMmRiNTQ3YjYwY2Y1YTU1NjZhNzlmMjk2ZmQ3Y2M5MWU5MThkOSJ9fX0="
+          url: http://textures.minecraft.net/texture/d58698448e316d4bdd833d9621c2db547b60cf5a5566a79f296fd7cc91e918d9
+      nitwit:
+        base-drop-chance: 0.05
+        looting-bonus: 0.02
+        itemstack:
+          type: PLAYER_HEAD
+          display-name: "<italic><gold>Zombie Nitwit Head</gold></italic>"
+          lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+          head-sound: "minecraft:entity.zombie_villager.ambient"
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGEyN2U0MjBmNDRmOWJiMDZjN2IzNjg0MDJiMjJhZjZkYzU3YmY5ZThjYTM0NzU4NDBmNmY3NWUyMTc4MDljMSJ9fX0="
+          url: http://textures.minecraft.net/texture/da27e420f44f9bb06c7b368402b22af6dc57bf9e8ca3475840f6f75e217809c1
       shepherd:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -1818,6 +1926,16 @@ drops:
           head-sound: "minecraft:entity.zombie_villager.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTFjZjBkOWFkMTAzNGMzNGMwNGNiNGQxZDMxMzAzOTQ3ZTg1MmM3NTczZjNhNGM0Nzk5ODAzMGQ2NTY2MDliYiJ9fX0="
           url: http://textures.minecraft.net/texture/91cf0d9ad1034c34c04cb4d1d31303947e852c7573f3a4c47998030d656609bb
+      toolsmith:
+        base-drop-chance: 0.05
+        looting-bonus: 0.02
+        itemstack:
+          type: PLAYER_HEAD
+          display-name: "<italic><gold>Zombie Toolsmith Head</gold></italic>"
+          lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+          head-sound: "minecraft:entity.zombie_villager.ambient"
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAwODkzZDMxYWNkMGU4NDIzMjkyZDQxMTNjZTkxZTI3M2QxZTU3ZTVlMTA0YmFhZmM4NTNiMmU4NjRjYjQzZiJ9fX0="
+          url: http://textures.minecraft.net/texture/300893d31acd0e8423292d4113ce91e273d1e57e5e104baafc853b2e864cb43f
       weaponsmith:
         base-drop-chance: 0.05
         looting-bonus: 0.02
@@ -1836,8 +1954,18 @@ drops:
           display-name: "<italic><gold>Zombie Villager Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
           head-sound: "minecraft:entity.zombie_villager.ambient"
-          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI1NTJjOTBmMjEyZTg1NWQxMjI1NWQ1Y2Q2MmVkMzhiOWNkN2UzMGU3M2YwZWE3NzlkMTc2NDMzMGU2OTI2NCJ9fX0="
-          url: http://textures.minecraft.net/texture/fb552c90f212e855d12255d5cd62ed38b9cd7e30e73f0ea779d1764330e69264
+          internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGM3NTA1ZjIyNGQ1MTY0YTExN2Q4YzY5ZjAxNWY5OWVmZjQzNDQ3MWM4YTJkZjkwNzA5NmM0MjQyYzM1MjRlOCJ9fX0="
+          url: http://textures.minecraft.net/texture/8c7505f224d5164a117d8c69f015f99eff434471c8a2df907096c4242c3524e8
+  ZOMBIE:
+    base-drop-chance: 0.05
+    looting-bonus: 0.02
+    itemstack:
+      type: ZOMBIE_HEAD
+      display-name: "<italic><gold>Zombie Head</gold></italic>"
+      lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+      head-sound: "minecraft:"
+      internal: ""
+      url:
   ZOMBIFIED_PIGLIN:
     base-drop-chance: 0.05
     looting-bonus: 0.02
