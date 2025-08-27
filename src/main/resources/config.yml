@@ -308,6 +308,16 @@ drops:
       head-sound: "minecraft:entity.fish.swim"
       internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGZlZWZmNGI3ZmNmY2U2OGIwZjc0ZGYwZGIwYWQwYzAxZjczMDFkMGM2ZDg5MzY5OWI0MDJiZDUwYmIzNzZiMCJ9fX0="
       url: http://textures.minecraft.net/texture/4feeff4b7fcfce68b0f74df0db0ad0c01f7301d0c6d893699b402bd50bb376b0
+  COPPER_GOLEM:
+    base-drop-chance: 0.05
+    looting-bonus: 0.02
+    itemstack:
+      type: PLAYER_HEAD
+      display-name: "<italic><gold>Copper Golem Head</gold></italic>"
+      lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
+      head-sound: "minecraft:entity.copper_golem.item_drop"
+      internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIyYzk2YjY5NjFmZjViNTMwNzUxMTZhYTk0MzMxYzQ3MTg1MWRlNTAwOGJhMDU5NGMzODdiNDZhNDI5ZWJjNCJ9fX0="
+      url: http://textures.minecraft.net/texture/fb2c96b6961ff5b53075116aa94331c471851de5008ba0594c387b46a429ebc4
   COW:
     variants:
       cold:
