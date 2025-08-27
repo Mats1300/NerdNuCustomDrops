@@ -161,7 +161,7 @@ drops:
         looting-bonus: 0.02
         itemstack:
           type: PLAYER_HEAD
-          display-name: "<italic><gold>Tuxedo Cat Head</italic></gold>"
+          display-name: "<italic><gold>Tuxedo Cat Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
           head-sound: "minecraft:entity.cat.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGZkMTBjOGU3NWY2NzM5OGM0NzU4N2QyNWZjMTQ2ZjMxMWMwNTNjYzVkMGFlYWI4NzkwYmNlMzZlZTg4ZjVmOCJ9fX0="
@@ -241,7 +241,7 @@ drops:
         looting-bonus: 0.02
         itemstack:
           type: PLAYER_HEAD
-          display-name: "<italic><gold>Brown Tabby Cat Head</gold></italic>"
+          display-name: "<italic><gold>Tabby Cat Head</gold></italic>"
           lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
           head-sound: "minecraft:entity.cat.ambient"
           internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGUyOGQzMGRiM2Y4YzNmZTUwY2E0ZjI2ZjMwNzVlMzZmMDAzYWU4MDI4MTM1YThjZDY5MmYyNGM5YTk4YWUxYiJ9fX0="
@@ -354,12 +354,12 @@ drops:
     base-drop-chance: 0.05
     looting-bonus: 0.02
     itemstack:
-      type: CREEPER_HEAD
+      type: PLAYER_HEAD
       display-name: "<italic><gold>Creeper Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
-      head-sound: "minecraft:"
-      internal: ""
-      url:
+      head-sound: "minecraft:entity.creeper.primed"
+      internal: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVlN2UwNzJlYWU4ZTc5OWQ5NzNjNDA4ODNhNzliZTRkZDJkNmY1ZDdkZGRiM2FjMTk1MTRlODVjZGViYTc2YSJ9fX0="
+      url: http://textures.minecraft.net/texture/95e7e072eae8e799d973c40883a79be4dd2d6f5d7dddb3ac19514e85cdeba76a
   DOLPHIN:
     base-drop-chance: 0.05
     looting-bonus: 0.02
@@ -1278,7 +1278,7 @@ drops:
     base-drop-chance: 0.05
     looting-bonus: 0.02
     itemstack:
-      type: SKELETON_HEAD
+      type: SKELETON_SKULL
       display-name: "<italic><gold>Skeleton Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
       head-sound: "minecraft:"
@@ -1676,7 +1676,7 @@ drops:
     base-drop-chance: 0.05
     looting-bonus: 0.02
     itemstack:
-      type: WITHER_SKELETON_HEAD
+      type: WITHER_SKELETON_SKULL
       display-name: "<italic><gold>Wither Skeleton Head</gold></italic>"
       lore: "<italic><light_purple>[Certified Authentic]</light_purple></italic>"
       head-sound: "minecraft:"

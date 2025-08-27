@@ -127,6 +127,7 @@ public class MobHeadFactory {
             if (debug) logger.info("[DEBUG] Applying custom texture to player head for {}", mobName);
 
             String profileName = MobHeadUtils.sanitizeProfileName(displayName);
+            logger.info("[DEBUG] Sanitized profile name: {}", profileName);
             applyTexture(head, texture, profileName, displayName, lore);
         }
 

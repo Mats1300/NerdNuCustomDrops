@@ -6,7 +6,7 @@
 
     <groupId>nu.nerd</groupId>
     <artifactId>NerdNuCustomDrops</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
 
     <name>NerdNuCustomDrops</name>
@@ -77,12 +77,6 @@
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
             <version>1.21.8-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.arcaniax</groupId>
-            <artifactId>HeadDatabase-API</artifactId>
-            <version>1.3.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

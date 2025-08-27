@@ -5,6 +5,7 @@ import com.destroystokyo.paper.profile.ProfileProperty;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
+import nu.nerd.utils.MobHeadUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -243,7 +244,8 @@ public class HeadPersistenceListener implements Listener {
      */
     private void applyTextureToSkullMeta(SkullMeta skullMeta, String texture, String profileName) {
         UUID uuid = UUID.nameUUIDFromBytes(texture.getBytes(StandardCharsets.UTF_8));
-        PlayerProfile profile = Bukkit.createProfile(uuid, profileName);
+        String safeName = MobHeadUtils.sanitizeProfileName(profileName);
+        PlayerProfile profile = Bukkit.createProfile(uuid, safeName);
         profile.setProperty(new ProfileProperty("textures", texture));
         skullMeta.setPlayerProfile(profile);
     }
