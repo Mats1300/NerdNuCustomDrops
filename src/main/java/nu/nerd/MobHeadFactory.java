@@ -33,6 +33,7 @@ public class MobHeadFactory {
 
     private static final MiniMessage MINI = MiniMessage.miniMessage();
     private static final Component PLAYER_HEAD_LORE = MINI.deserialize("[Certified Authentic]"); // Consistent lore for player heads
+    private static final NamespacedKey CUSTOM_HEAD_KEY = new NamespacedKey("nerdnucustomdrops", "custom_head");
 
     /**
      * Creates a custom head ItemStack for a given entity based on configuration.
@@ -118,6 +119,9 @@ public class MobHeadFactory {
                 meta.getPersistentDataContainer().set(soundKey, PersistentDataType.STRING, sound);
             }
 
+            // ✅ Set the custom head PDC flag
+            meta.getPersistentDataContainer().set(CUSTOM_HEAD_KEY, PersistentDataType.BYTE, (byte)1);
+
             head.setItemMeta(meta);
         }
 
@@ -171,6 +175,7 @@ public class MobHeadFactory {
             meta.setOwningPlayer(Bukkit.getOfflinePlayer(playerName));
             meta.displayName(MINI.deserialize(playerName + " Head"));
             meta.lore(List.of(PLAYER_HEAD_LORE));
+            meta.getPersistentDataContainer().set(CUSTOM_HEAD_KEY, PersistentDataType.BYTE, (byte)1);
         });
         return head;
     }
@@ -184,5 +189,10 @@ public class MobHeadFactory {
     private static String capitalize(String str) {
         if (str == null || str.isEmpty()) return str;
         return str.substring(0, 1).toUpperCase() + str.substring(1);
+    }
+    /** Checks if a head is a custom plugin head via PDC flag. */
+    public static boolean isCustomHead(ItemStack item) {
+        if (item == null || !item.hasItemMeta()) return false;
+        return item.getItemMeta().getPersistentDataContainer().has(CUSTOM_HEAD_KEY, PersistentDataType.BYTE);
     }
 }

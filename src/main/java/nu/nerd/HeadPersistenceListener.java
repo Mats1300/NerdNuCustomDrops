@@ -59,6 +59,7 @@ public class HeadPersistenceListener implements Listener {
     private final NamespacedKey textureKey;
     private final NamespacedKey certifiedFlagKey;
     private final NamespacedKey materialKey;
+    private final NamespacedKey customHeadKey;
 
     private final boolean debug;
     private final Logger logger;
@@ -75,6 +76,7 @@ public class HeadPersistenceListener implements Listener {
         this.textureKey = new NamespacedKey(plugin, "head_texture");
         this.certifiedFlagKey = new NamespacedKey(plugin, "certified_added");
         this.materialKey = new NamespacedKey(plugin, "head_material");
+        this.customHeadKey = new NamespacedKey(plugin, "custom_head");
         this.debug = plugin.getConfig().getBoolean("debug", false);
         this.logger = logger;
     }
@@ -92,6 +94,7 @@ public class HeadPersistenceListener implements Listener {
     public void onHeadPlace(BlockPlaceEvent event) {
         ItemStack item = event.getItemInHand();
         if (!isSkullType(item.getType())) return;
+        if (!MobHeadFactory.isCustomHead(item)) return;
 
         BlockState state = event.getBlockPlaced().getState();
         if (!(state instanceof Skull skull)) return;
@@ -119,7 +122,7 @@ public class HeadPersistenceListener implements Listener {
                             container.set(textureKey, PersistentDataType.STRING, property.getValue());
                         });
 
-                // Also mark the flag if the lore already includes the certified line
+                // Mark the flag if the lore already includes the certified line
                 List<Component> lore = skullMeta.lore();
                 if (lore != null && !lore.isEmpty()) {
                     final String targetPlain = PLAIN.serialize(PLAYER_HEAD_LORE);
@@ -132,6 +135,10 @@ public class HeadPersistenceListener implements Listener {
                 }
             }
         }
+
+        // Mark this block as a custom head
+        container.set(customHeadKey, PersistentDataType.BYTE, (byte) 1);
+
 
         skull.update(true);
     }
@@ -155,9 +162,11 @@ public class HeadPersistenceListener implements Listener {
 
         PersistentDataContainer container = skull.getPersistentDataContainer();
 
+        if (!container.has(customHeadKey, PersistentDataType.BYTE)) return;
+
         // Determine head material to drop
         Material dropMaterial = block.getType();
-        String serializedMaterial = container.get(new NamespacedKey("nerd", "head_material"), PersistentDataType.STRING);
+        String serializedMaterial = container.get(materialKey, PersistentDataType.STRING);
         if (serializedMaterial != null) {
             try {
                 dropMaterial = Material.valueOf(serializedMaterial);
@@ -185,7 +194,7 @@ public class HeadPersistenceListener implements Listener {
         }
         if (lore == null) lore = new ArrayList<>();
 
-        // Certified Authentic: plain-text check + PDC flag
+        // Certified Authentic check
         final String targetPlain = PLAIN.serialize(PLAYER_HEAD_LORE);
         boolean hasPlain = lore.stream().map(PLAIN::serialize).anyMatch(s -> s.equals(targetPlain));
         boolean hadFlag = container.has(certifiedFlagKey, PersistentDataType.BYTE);
