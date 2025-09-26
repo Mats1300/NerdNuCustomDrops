@@ -1,4 +1,5 @@
 debug: false
+allow-spawner-heads: false
 drops:
   ALLAY:
     base-drop-chance: 0.05

@@ -8,6 +8,7 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
@@ -125,6 +126,17 @@ public class MobDeathListener implements Listener {
         if (!(entity instanceof Mob mob)) return;
 
         // ----------------------
+        // BLOCK SPAWNER MOBS (if config disabled)
+        // ----------------------
+        boolean allowSpawnerHeads = config.getBoolean("allow-spawner-heads", false);
+        if (!allowSpawnerHeads && mob.getEntitySpawnReason() == CreatureSpawnEvent.SpawnReason.SPAWNER) {
+            if (debug) {
+                plugin.getLogger().info("[DEBUG] Prevented head drop for spawner mob: " + mob.getType());
+            }
+            return;
+        }
+
+        // ----------------------
         // CHARGED CREEPER KILLS
         // ----------------------
         if (entity.hasMetadata(CHARGED_CREEPER_KEY)) {
@@ -135,7 +147,10 @@ public class MobDeathListener implements Listener {
         // ----------------------
         // PLAYER KILLS
         // ----------------------
-        MetadataValue playerMeta = entity.getMetadata(PLAYER_NAME_KEY).stream().findFirst().orElse(null);
+        MetadataValue playerMeta = entity.getMetadata(PLAYER_NAME_KEY).stream()
+                .filter(meta -> meta.getOwningPlugin() == plugin)
+                .findFirst()
+                .orElse(null);
         if (playerMeta != null) {
             Player killer = mob.getKiller();
             if (killer == null) return;
