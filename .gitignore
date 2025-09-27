@@ -1,2 +1,13 @@
 # Project exclude paths
+# Build folders
 /target/
+/out/
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+/workspace.xml
+/shelf/
+
+# Logs
+*.log

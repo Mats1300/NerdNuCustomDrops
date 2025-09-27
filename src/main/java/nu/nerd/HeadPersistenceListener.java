@@ -61,6 +61,7 @@ public class HeadPersistenceListener implements Listener {
     private final NamespacedKey materialKey;
     private final NamespacedKey customHeadKey;
 
+    private final CustomDrops plugin;
     private final boolean debug;
     private final Logger logger;
 
@@ -71,6 +72,7 @@ public class HeadPersistenceListener implements Listener {
      * @param logger logger instance for optional debug output
      */
     public HeadPersistenceListener(Plugin plugin, Logger logger) {
+        this.plugin = (CustomDrops) plugin;
         this.loreKey = new NamespacedKey(plugin, "head_lore");
         this.nameKey = new NamespacedKey(plugin, "head_name");
         this.textureKey = new NamespacedKey(plugin, "head_texture");
@@ -156,6 +158,13 @@ public class HeadPersistenceListener implements Listener {
     public void onHeadBreak(BlockBreakEvent event) {
         Block block = event.getBlock();
         if (!isSkullType(block.getType())) return;
+
+        // --- Bolt protection check ---
+        if (plugin.getBoltHook() != null && plugin.getBoltHook().isAvailable()) {
+            if (plugin.getBoltHook().canAccess(block, event.getPlayer())) {
+                return;
+            }
+        }
 
         BlockState state = block.getState();
         if (!(state instanceof Skull skull)) return;

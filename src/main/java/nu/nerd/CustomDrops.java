@@ -1,5 +1,6 @@
 package nu.nerd;
 
+import nu.nerd.hooks.BoltHook;
 import org.bukkit.plugin.java.JavaPlugin;
 import nu.nerd.commands.MobHeadListCommand;
 import org.slf4j.Logger;
@@ -38,6 +39,9 @@ public class CustomDrops extends JavaPlugin {
     public Logger getSlf4jLogger() {
         return LOGGER;
     }
+
+    // Hook for optional Bolt integration
+    private BoltHook boltHook;
 
     /**
      * Called by Bukkit when the plugin is enabled.
@@ -78,6 +82,14 @@ public class CustomDrops extends JavaPlugin {
             LOGGER.warn("The 'mobhead' command was not found in plugin.yml or failed to load.");
         }
 
+        // Initialize the Bolt hook
+        boltHook = new BoltHook();
+        if (boltHook.isAvailable()) {
+            getLogger().info("Bolt detected, protections will be respected.");
+        } else {
+            getLogger().info("Bolt not found, skipping protection checks.");
+        }
+
         // Log that the plugin has been successfully enabled
         LOGGER.info("NerdNuCustomDrops plugin has been enabled!");
     }
@@ -90,5 +102,14 @@ public class CustomDrops extends JavaPlugin {
     @Override
     public void onDisable() {
         LOGGER.info("NerdNuCustomDrops plugin has been disabled.");
+    }
+
+    /**
+     * Provides access to the Bolt hook.
+     *
+     * @return the BoltHook instance, or null if unavailable
+     */
+    public BoltHook getBoltHook() {
+        return boltHook;
     }
 }

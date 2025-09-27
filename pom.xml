@@ -6,7 +6,7 @@
 
     <groupId>nu.nerd</groupId>
     <artifactId>NerdNuCustomDrops</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <packaging>jar</packaging>
 
     <name>NerdNuCustomDrops</name>
@@ -70,6 +70,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>codemc-repo</id>
+            <url>https://repo.codemc.io/repository/maven-public/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -83,6 +87,12 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.18.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.popcraft</groupId>
+            <artifactId>bolt-bukkit</artifactId>
+            <version>1.1.33</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
