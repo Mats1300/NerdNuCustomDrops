@@ -13,7 +13,6 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Entity;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.persistence.PersistentDataType;
 import org.slf4j.Logger;
@@ -59,79 +58,78 @@ public class MobHeadFactory {
         String mobName = entity.getType().name();
         String variantKey = EntityVariantUtils.getVariantId(entity);
 
-        // Try to get variant config section
-        ConfigurationSection section = null;
-        if (variantKey != null) {
-            section = config.getConfigurationSection("drops." + mobName + ".variants." + variantKey);
-        }
-
-        // Fallback to base mob section if variant not found
-        if (section == null) {
-            section = config.getConfigurationSection("drops." + mobName);
-        }
-
-        // If still null, log debug and return null
-        if (section == null) {
-            if (debug) logger.warn("[DEBUG] No config section found for mob {} (variant {})", mobName, variantKey);
+        ConfigurationSection dropsSection = config.getConfigurationSection("drops");
+        if (dropsSection == null) {
+            if (debug) logger.warn("[DEBUG] No 'drops' section in config!");
             return null;
         }
 
-        if (debug) logger.info("[DEBUG] Creating head for {}, variant: {}", mobName, variantKey);
-
-        // Get display-name from config first
-        String displayNameStr = null;
-        ConfigurationSection itemstackSection = section.getConfigurationSection("itemstack");
-        if (itemstackSection != null) {
-            displayNameStr = itemstackSection.getString("display-name");
+        // 1️⃣ Determine which section to use: variant or base mob
+        ConfigurationSection section = null;
+        if (variantKey != null) {
+            ConfigurationSection variantSection = dropsSection.getConfigurationSection(mobName + ".variants." + variantKey);
+            if (variantSection != null) {
+                section = variantSection;
+                if (debug) logger.info("[DEBUG] Using variant section for {}: {}", mobName, variantKey);
+            }
+        }
+        if (section == null) {
+            section = dropsSection.getConfigurationSection(mobName);
+            if (section == null) {
+                if (debug) logger.warn("[DEBUG] No config section found for mob {} (variant {})", mobName, variantKey);
+                return null;
+            }
+            if (debug) logger.info("[DEBUG] Using base section for {}", mobName);
         }
 
+        // 2️⃣ Extract itemstack section (contains display-name, lore, texture)
+        ConfigurationSection itemstackSection = section.getConfigurationSection("itemstack");
+
+        // 3️⃣ Display name
+        String displayNameStr = (itemstackSection != null) ? itemstackSection.getString("display-name") : null;
         Component displayName;
         if (displayNameStr != null && !displayNameStr.isEmpty()) {
-            displayName = MINI.deserialize(displayNameStr); // Use config value
+            displayName = MINI.deserialize(displayNameStr);
         } else {
-            // Fallback auto-generated
             displayName = (variantKey != null)
                     ? MINI.deserialize(capitalize(variantKey) + " " + capitalize(mobName.toLowerCase()) + " Head")
                     : MINI.deserialize(capitalize(mobName.toLowerCase()) + " Head");
         }
 
-        // Determine material directly from config (default to PLAYER_HEAD)
-        Material material = Material.matchMaterial(section.getString("itemstack.type", "PLAYER_HEAD"));
-        if (material == null) {
-            material = Material.PLAYER_HEAD;
-        }
+        // 4️⃣ Material
+        Material material = Material.matchMaterial((itemstackSection != null) ? itemstackSection.getString("type", "PLAYER_HEAD") : "PLAYER_HEAD");
+        if (material == null) material = Material.PLAYER_HEAD;
 
-        // Determine lore
-        String loreString = section.getString("itemstack.lore", "");
+        // 5️⃣ Lore
+        String loreString = (itemstackSection != null) ? itemstackSection.getString("lore", "") : "";
         List<Component> lore = loreString.isEmpty() ? List.of() : List.of(MINI.deserialize(loreString));
 
-        // Create the Itemstack
+        // 6️⃣ Create head
         ItemStack head = new ItemStack(material);
-        ItemMeta meta = head.getItemMeta();
-        if (meta != null) {
-            meta.displayName(displayName);
-            meta.lore(lore);
+        head.editMeta(meta -> {
+            if (meta != null) {
+                meta.displayName(displayName);
+                meta.lore(lore);
 
-            // Store head-sound
-            String sound = section.getString("itemstack.head-sound");
-            if (sound != null && !sound.isEmpty()) {
-                NamespacedKey soundKey = new NamespacedKey("nerdnucustomdrops", "head_sound");
-                meta.getPersistentDataContainer().set(soundKey, PersistentDataType.STRING, sound);
+                // Head sound
+                if (itemstackSection != null) {
+                    String sound = itemstackSection.getString("head-sound");
+                    if (sound != null && !sound.isEmpty()) {
+                        NamespacedKey soundKey = new NamespacedKey("nerdnucustomdrops", "head_sound");
+                        meta.getPersistentDataContainer().set(soundKey, PersistentDataType.STRING, sound);
+                    }
+                }
+
+                // PDC flag for custom head
+                meta.getPersistentDataContainer().set(CUSTOM_HEAD_KEY, PersistentDataType.BYTE, (byte)1);
             }
+        });
 
-            // ✅ Set the custom head PDC flag
-            meta.getPersistentDataContainer().set(CUSTOM_HEAD_KEY, PersistentDataType.BYTE, (byte)1);
-
-            head.setItemMeta(meta);
-        }
-
-        // Apply custom player texture if available
+        // 7️⃣ Apply texture if player head
         String texture = (itemstackSection != null) ? itemstackSection.getString("internal") : null;
         if (material == Material.PLAYER_HEAD && texture != null && !texture.isEmpty()) {
-            if (debug) logger.info("[DEBUG] Applying custom texture to player head for {}", mobName);
-
             String profileName = MobHeadUtils.sanitizeProfileName(displayName);
-            logger.info("[DEBUG] Sanitized profile name: {}", profileName);
+            if (debug) logger.info("[DEBUG] Applying custom texture for {} variant {}", mobName, variantKey);
             applyTexture(head, texture, profileName, displayName, lore);
         }
 

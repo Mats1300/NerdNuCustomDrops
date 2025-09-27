@@ -2,7 +2,7 @@ package nu.nerd;
 
 import nu.nerd.hooks.BoltHook;
 import org.bukkit.plugin.java.JavaPlugin;
-import nu.nerd.commands.MobHeadListCommand;
+import nu.nerd.commands.MobHeadCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -71,14 +71,13 @@ public class CustomDrops extends JavaPlugin {
                 this
         );
 
-        // Get the command object
-        var command = getCommand("mobhead");
-
-        // Ensure the command is not null before calling setExecutor
-        if (command != null) {
-            command.setExecutor(new MobHeadListCommand(this)); // Pass the plugin instance to the command class
+        // Register /mobhead command with executor AND tab completer
+        var mobheadCommand = getCommand("mobhead");
+        if (mobheadCommand != null) {
+            MobHeadCommand commandHandler = new MobHeadCommand(this);
+            mobheadCommand.setExecutor(commandHandler);
+            mobheadCommand.setTabCompleter(commandHandler); // <--- tab completion enabled
         } else {
-            // If the command is null, log a warning
             LOGGER.warn("The 'mobhead' command was not found in plugin.yml or failed to load.");
         }
 

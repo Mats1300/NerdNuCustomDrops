@@ -12,6 +12,18 @@ softdepend:
   - Bolt
 commands:
   mobhead:
-    description: List all available mob heads.
-    usage: /mobhead list
-    permission: mobhead.list
+    description: Manage mob heads (list or give).
+    usage: /mobhead <list|give>
+    permission: nerdnucustomdrops.mobhead
+    aliases: [mh]
+
+permissions:
+  nerdnucustomdrops.mobhead:
+    description: Allows use of the /mobhead command.
+    default: true
+  nerdnucustomdrops.mobhead.list:
+    description: Allows listing available mob heads.
+    default: true
+  nerdnucustomdrops.mobhead.give:
+    description: Allows giving mob heads to players.
+    default: op
