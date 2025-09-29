@@ -9,8 +9,10 @@ A Minecraft plugin for [Paper](https://papermc.io/) 1.21.8 that adds custom mob 
 - 🔊 **NoteBlock Integration** – When placed on a NoteBlock, heads play matching mob sounds.
 - 🧪 **Drop Chance Tuning** – Drop chances scale with Looting level and per-entity configuration.
 - ⚙️ **Fully Configurable** – Texture, lore, drop rates, and more via `config.yml`.
-- 🧾 **Commands & Debugging** – `/mobhead` command with subcommand like `list`
-- Note Debugging is for Dev Users. Set it true in Config for Debugging to be enabled. 
+- 🧾 Commands & Debugging – /mobhead command with subcommands:
+- /mobhead list – Displays all available mob heads.
+- /mobhead give <mob> – Gives the specified mob head directly.
+- 🛠️ Debugging Tools – Debug logging for developers. Enable it in config.yml under debug: true.
 
 ## 📦 Installation
 
@@ -24,7 +26,7 @@ A Minecraft plugin for [Paper](https://papermc.io/) 1.21.8 that adds custom mob 
 Example
 ```yaml
 Armadillo:
-    base-drop-chance: 0.05 # 0.05 = 5% Base drop chance 
+    base-drop-chance: 0.01 # 0.01 = 1% Base drop chance 
     looting-bonus: 0.02 # 0.02 = Adds 2% per looting level 
     itemstack:
       type: PLAYER_HEAD # Do not Change
