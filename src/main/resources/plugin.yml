@@ -8,8 +8,6 @@ website: https://github.com/Mats1300/NerdNuCustomDrops
 api-version: 1.21.8
 load: STARTUP
 license: MIT
-softdepend:
-  - Bolt
 commands:
   mobhead:
     description: Manage mob heads (list or give).

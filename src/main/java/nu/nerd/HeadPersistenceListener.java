@@ -60,8 +60,8 @@ public class HeadPersistenceListener implements Listener {
     private final NamespacedKey certifiedFlagKey;
     private final NamespacedKey materialKey;
     private final NamespacedKey customHeadKey;
+    private final NamespacedKey ownerKey;
 
-    private final CustomDrops plugin;
     private final boolean debug;
     private final Logger logger;
 
@@ -72,13 +72,13 @@ public class HeadPersistenceListener implements Listener {
      * @param logger logger instance for optional debug output
      */
     public HeadPersistenceListener(Plugin plugin, Logger logger) {
-        this.plugin = (CustomDrops) plugin;
         this.loreKey = new NamespacedKey(plugin, "head_lore");
         this.nameKey = new NamespacedKey(plugin, "head_name");
         this.textureKey = new NamespacedKey(plugin, "head_texture");
         this.certifiedFlagKey = new NamespacedKey(plugin, "certified_added");
         this.materialKey = new NamespacedKey(plugin, "head_material");
         this.customHeadKey = new NamespacedKey(plugin, "custom_head");
+        this.ownerKey = new NamespacedKey(plugin, "head_owner");
         this.debug = plugin.getConfig().getBoolean("debug", false);
         this.logger = logger;
     }
@@ -141,6 +141,8 @@ public class HeadPersistenceListener implements Listener {
         // Mark this block as a custom head
         container.set(customHeadKey, PersistentDataType.BYTE, (byte) 1);
 
+        // Store the UUID of the player who placed this head
+        container.set(ownerKey, PersistentDataType.STRING, event.getPlayer().getUniqueId().toString());
 
         skull.update(true);
     }
@@ -159,19 +161,23 @@ public class HeadPersistenceListener implements Listener {
         Block block = event.getBlock();
         if (!isSkullType(block.getType())) return;
 
-        // --- Bolt protection check ---
-        if (plugin.getBoltHook() != null && plugin.getBoltHook().isAvailable()) {
-            if (plugin.getBoltHook().canAccess(block, event.getPlayer())) {
-                return;
-            }
-        }
-
         BlockState state = block.getState();
         if (!(state instanceof Skull skull)) return;
 
         PersistentDataContainer container = skull.getPersistentDataContainer();
 
         if (!container.has(customHeadKey, PersistentDataType.BYTE)) return;
+
+        // Prevent others from breaking another player's head
+        String ownerId = container.get(ownerKey, PersistentDataType.STRING);
+        if (ownerId != null) {
+            UUID ownerUuid = UUID.fromString(ownerId);
+            if (!ownerUuid.equals(event.getPlayer().getUniqueId())) {
+                event.setCancelled(true);
+                event.getPlayer().sendMessage(Component.text("You cannot break another player's head."));
+                return;
+            }
+        }
 
         // Determine head material to drop
         Material dropMaterial = block.getType();
