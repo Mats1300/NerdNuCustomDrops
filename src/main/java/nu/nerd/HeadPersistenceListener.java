@@ -22,6 +22,7 @@ import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.Plugin;
+import org.popcraft.bolt.BoltAPI;
 import org.slf4j.Logger;
 
 import java.nio.charset.StandardCharsets;
@@ -64,6 +65,7 @@ public class HeadPersistenceListener implements Listener {
 
     private final boolean debug;
     private final Logger logger;
+    private final BoltAPI boltAPI;
 
     /**
      * Constructs a new {@code HeadPersistenceListener}.
@@ -81,6 +83,12 @@ public class HeadPersistenceListener implements Listener {
         this.ownerKey = new NamespacedKey(plugin, "head_owner");
         this.debug = plugin.getConfig().getBoolean("debug", false);
         this.logger = logger;
+
+        if(Bukkit.getPluginManager().getPlugin("Bolt") != null) {
+            this.boltAPI = plugin.getServer().getServicesManager().load(BoltAPI.class);
+        } else {
+            boltAPI = null;
+        }
     }
 
     /**
@@ -141,9 +149,6 @@ public class HeadPersistenceListener implements Listener {
         // Mark this block as a custom head
         container.set(customHeadKey, PersistentDataType.BYTE, (byte) 1);
 
-        // Store the UUID of the player who placed this head
-        container.set(ownerKey, PersistentDataType.STRING, event.getPlayer().getUniqueId().toString());
-
         skull.update(true);
     }
 
@@ -168,15 +173,11 @@ public class HeadPersistenceListener implements Listener {
 
         if (!container.has(customHeadKey, PersistentDataType.BYTE)) return;
 
-        // Prevent others from breaking another player's head
-        String ownerId = container.get(ownerKey, PersistentDataType.STRING);
-        if (ownerId != null) {
-            UUID ownerUuid = UUID.fromString(ownerId);
-            if (!ownerUuid.equals(event.getPlayer().getUniqueId())) {
-                event.setCancelled(true);
-                event.getPlayer().sendMessage(Component.text("You cannot break another player's head."));
-                return;
-            }
+        // Prevent head duplication when on trust list.
+        if(boltAPI != null && boltAPI.isProtected(block) &&
+                !boltAPI.loadProtection(block).getOwner().equals(event.getPlayer().getUniqueId())) {
+            event.setCancelled(true);
+            return;
         }
 
         // Determine head material to drop
